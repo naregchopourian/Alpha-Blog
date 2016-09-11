@@ -8,5 +8,6 @@ get 'about', to: 'pages#about'
 #
 # this right here is magic! it has just created all he paths for CRUD in articles!
 resources :articles
+#freaking magic!!!!!!
 
 end
