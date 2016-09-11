@@ -3,16 +3,11 @@
   <head>
     <title>AlphaBlog</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 	<body>
-  	<% flash.each do |name, message| %>
-  		<ul> 
-  			<li><%= message %></li>
-  		</ul>
-  		<% end %>
-		<%= yield %>
+      <%= render 'articles/messages' %>
+  	<%= yield %>
   </body>
 </html>
