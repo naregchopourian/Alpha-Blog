@@ -1,2 +1,103 @@
+$navbar-default-bg: #fff;
+
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+///////////////////////
+///////////////////////
+//////HOME PAGE////////
+///////////////////////
+///////////////////////
+
+#logo {
+
+	float: left; 
+	font-size: 20px;
+	color: #FF0303; 
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+	margin-top: 100
+}
+
+.jumbotron h1 {
+text-align: center;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: -1px;
+color: #FFF;
+font-size: 40px;
+margin-top: 100px;
+}
+
+#link {
+
+	text-align: center;
+	margin-top: 100px;
+	
+}
+
+ #p1 {
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 5px;
+	
+}
+
+.jumbotron {
+	margin-top: 12px;
+	background-image: asset-url('bridge.jpg');
+	background-size: cover;
+	height: 600px;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	
+	
+//////////////////
+///////////////////////////
+//////FORM TEMPLATE////////
+//////////////////////////	
+
+}
+
+.new-title {
+
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.edit-title {
+
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.cancel {
+
+text-align: center;
+
+
+}
+
+
+////////////////////
+///////////////////
+///////////////////
+
+
+
+
+
+
+
+

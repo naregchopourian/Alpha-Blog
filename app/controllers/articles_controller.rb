@@ -2,6 +2,7 @@ class ArticlesController < ApplicationController
 
 before_action :article_id, only: [:edit, :update, :show, :destroy]
 
+
 def index
 @articles = Article.all
 end  
