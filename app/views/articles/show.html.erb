@@ -1,13 +1,19 @@
-<h1>Showing slected article</h1>
-
-<p>
-	Title: <%= @article.title %>
-</p>
-
-<p>
-	Description: <%= @article.description %>
-</p>
 
 
-<p><%= link_to "Edit this post", edit_article_path %></p>
-<p><%= link_to "go back to veiw posts", articles_path %></p>
+		<h1 class="showh1">Showing Post</h1>
+
+<div class="jumbotronShow">
+
+	<p class="titleShow">
+		Title: <%= @article.title %>
+	</p>
+
+	<p class="descriptionShow">
+		Description: <%= @article.description %>
+	</p>
+</div>
+
+	
+	<div class="jumbotronBtn">
+		<p id="linkGoBack"><%= link_to "Go back to view", articles_path, class: "btn btn-success" %> <%= link_to "Delete this post", article_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger" %> <%= link_to "Edit this post", edit_article_path, class: "btn btn-primary" %></p>
+ 	</div>
