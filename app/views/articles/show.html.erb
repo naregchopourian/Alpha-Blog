@@ -1,6 +1,6 @@
 
 
-		<h1 class="showh1">Showing Post</h1>
+<h1 class="showh1"><%= @article.user.username %></h1>
 
 <div class="jumbotronShow">
 
@@ -9,11 +9,20 @@
 	</p>
 
 	<p class="descriptionShow">
-		Description: <%= @article.description %>
+		Body: <%= @article.description %>
 	</p>
+	
+	<p class="descriptionShow">
+		Created: <%= time_ago_in_words(@article.created_at) %> ago
+	</p>
+	
+
+	
 </div>
 
 	
 	<div class="jumbotronBtn">
 		<p id="linkGoBack"><%= link_to "Go back to view", articles_path, class: "btn btn-success" %> <%= link_to "Delete this post", article_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger" %> <%= link_to "Edit this post", edit_article_path, class: "btn btn-primary" %></p>
  	</div>
+
+
